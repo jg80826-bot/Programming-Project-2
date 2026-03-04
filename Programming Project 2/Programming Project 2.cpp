@@ -1,17 +1,19 @@
 #include <iostream>
+#include <cmath>
 using namespace std;
 
 int main()
 {
-    const double RISE_RATE = 1.5;
+    const double numCustomers = 16500;
 
-    double rise5 = RISE_RATE * 5;
-    double rise7 = RISE_RATE * 7;
-    double rise10 = RISE_RATE * 10;
+    double percentEnergyDrinks = numCustomers * 0.15;
+    double percentCitrus = percentEnergyDrinks * 0.58;
 
-    cout << "In 5 years: " << rise5 << " mm" << endl;
-    cout << "In 7 years: " << rise7 << " mm" << endl;
-    cout << "In 10 years: " << rise10 << " mm" << endl;
+    int roundedEnergyDrinks = round(percentEnergyDrinks);
+    int roundedCitrus = round(percentCitrus);
+
+    cout << "The approximate number of customers in the survey purchasing one or more energy drinks per week is: " << roundedEnergyDrinks << " customers." << endl;
+    cout << "The approximate number of customers in the survey preferring citrus-flavored energy drinks is: " << roundedCitrus << " cutomers." << endl;
 
     return 0;
 }
