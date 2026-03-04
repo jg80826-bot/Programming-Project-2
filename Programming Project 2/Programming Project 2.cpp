@@ -3,15 +3,13 @@ using namespace std;
 
 int main()
 {
-    const double RISE_RATE = 1.5;
+    const double numGallons = 20;
 
-    double rise5 = RISE_RATE * 5;
-    double rise7 = RISE_RATE * 7;
-    double rise10 = RISE_RATE * 10;
+    double inTown = numGallons * 23.5;
+    double onHighway = numGallons * 28.9;
 
-    cout << "In 5 years: " << rise5 << " mm" << endl;
-    cout << "In 7 years: " << rise7 << " mm" << endl;
-    cout << "In 10 years: " << rise10 << " mm" << endl;
+    cout << "In town: " << inTown << " miles" << endl;
+    cout << "On highway: " << onHighway << " miles" << endl;
 
     return 0;
 }
